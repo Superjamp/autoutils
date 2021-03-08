@@ -3,9 +3,10 @@ package game
 type Region int
 
 const (
-	NA Region = iota
-	AS
-	EU
+	NA Region = 13
+	AS Region = 4
+	EU Region = 6
+	IP Region = 8
 )
 
 func (r Region) ToString() string {
@@ -16,6 +17,8 @@ func (r Region) ToString() string {
 		return "Europe"
 	case AS:
 		return "Asia"
+	case IP:
+		return "Impostor"
 	}
 	return "Unknown"
 }
