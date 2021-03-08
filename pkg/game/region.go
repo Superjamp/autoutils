@@ -3,6 +3,9 @@ package game
 type Region int
 
 const (
+	NA Region = 0
+	AS Region = 1
+	EU Region = 2
 	NA Region = 13
 	AS Region = 4
 	EU Region = 6
